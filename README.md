@@ -50,3 +50,11 @@ Include screenshots or sample report output.
 - Add MITRE ATT&CK mapping
 - Add timeline visualization
 - Add email or Slack alerts
+
+## Security References
+- OWASP Security Logging and Monitoring Failures
+- OWASP Logging Cheat Sheet
+- MITRE ATT&CK Brute Force T1110
+
+## False Positive Considerations
+A repeated 404 rule may flag vulnerability scanners, broken links, search engine crawlers, or users typing incorrect URLs. For that reason, DangerScope assigns repeated 404 behavior a medium severity instead of high severity.

@@ -14,3 +14,6 @@ Review authentication logs, temporarily rate-limit the source IP, and verify whe
 
 ## Limitations
 This alert is based on request patterns and does not confirm a successful compromise.
+
+## References
+TryHackMe provided great resources for output logs like this
