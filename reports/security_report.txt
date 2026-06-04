@@ -1,0 +1,31 @@
+DangerScope Security Report
+===========================
+
+Risk Summary by IP
+------------------
+45.83.12.9 | Score: 45 | Risk: MEDIUM
+77.90.15.3 | Score: 35 | Risk: MEDIUM
+192.168.1.10 | Score: 30 | Risk: MEDIUM
+
+Alerts
+------
+
+[MEDIUM] Admin Route Probing
+IP: 45.83.12.9
+Requested suspicious admin path: /admin
+
+[MEDIUM] Admin Route Probing
+IP: 45.83.12.9
+Requested suspicious admin path: /wp-admin
+
+[MEDIUM] Admin Route Probing
+IP: 45.83.12.9
+Requested suspicious admin path: /phpmyadmin
+
+[HIGH] Possible Path Traversal
+IP: 77.90.15.3
+Request path contains path traversal pattern: /../../etc/passwd
+
+[HIGH] Possible Brute Force
+IP: 192.168.1.10
+5 failed login attempts detected.

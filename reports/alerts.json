@@ -1,0 +1,32 @@
+[
+    {
+        "ip": "45.83.12.9",
+        "type": "Admin Route Probing",
+        "severity": "medium",
+        "description": "Requested suspicious admin path: /admin"
+    },
+    {
+        "ip": "45.83.12.9",
+        "type": "Admin Route Probing",
+        "severity": "medium",
+        "description": "Requested suspicious admin path: /wp-admin"
+    },
+    {
+        "ip": "45.83.12.9",
+        "type": "Admin Route Probing",
+        "severity": "medium",
+        "description": "Requested suspicious admin path: /phpmyadmin"
+    },
+    {
+        "ip": "77.90.15.3",
+        "type": "Possible Path Traversal",
+        "severity": "high",
+        "description": "Request path contains path traversal pattern: /../../etc/passwd"
+    },
+    {
+        "ip": "192.168.1.10",
+        "type": "Possible Brute Force",
+        "severity": "high",
+        "description": "5 failed login attempts detected."
+    }
+]

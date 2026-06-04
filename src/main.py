@@ -1,3 +1,5 @@
+import argparse
+
 from parser import parse_log_file
 from detectors import run_all_detectors
 from risk_score import summarize_risk_by_ip
@@ -5,7 +7,11 @@ from report import export_alerts_json, export_risk_summary_csv, export_text_repo
 
 
 def main():
-    log_entries = parse_log_file("sample_logs/suspicious_access.log")
+    parser = argparse.ArgumentParser(description="DangerScope Mini SOC Detection Pipeline")
+    parser.add_argument("--log", required=True, help="Path to the log file to analyze")
+    args = parser.parse_args()
+
+    log_entries = parse_log_file(args.log)
     alerts = run_all_detectors(log_entries)
     risk_summary = summarize_risk_by_ip(alerts)
 
